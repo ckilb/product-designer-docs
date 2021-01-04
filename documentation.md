@@ -5,10 +5,11 @@
 - [Customize Fonts](#customizing-fonts)
 - [Missing features](#missing-features)
 - [Extending Product Designer](#extending-product-designer)
-    * [Product Designer CSS](#product-designer-css)
-    * [Product Designer JavaScript](#product-designer-javascript)
+    * [CSS](#css)
+    * [JavaScript](#javascript)
     * [PHP](#php)
-    * [PostMessage JavaScript](#postmessage-javascript)
+    * [PostMessage API](#postmessage-api)
+- [Support & Help](#support)
 
 ### Introduction
 
@@ -20,7 +21,8 @@ We hope the documentation will answer *your* questions, too.
 
 There are a few requirements you should bring with you to use and work with the plugin:
 - You are familiar with the shop system (Shopware, WooCommerce) you are using.
-- You read this document.
+- You've read this document.
+- You've checked the backend configuration options including it's description texts.
 - If there's functionality missing that you require to solve your needs you probably need coding skills. See [Missing features](#missing-features)
  section.
 
@@ -83,7 +85,8 @@ of the plugin have very specific requirements.
 
 The plugin will be extended and improved in frequent intervals.
 If there's some functionality that is missing from your point of view you can
-- contact our support and *ask* if the functionality is maybe planned within one of the next releases. We're always open to new ideas. Please mind that
+- check our [Trello Board](#https://trello.com/b/iDjnfwo9/kilb-product-designer-feature-wishes) if the feature wish was already requested by some other customer.  
+  If not, you can contact our support and *ask* if the functionality is maybe planned within one of the next releases. We're always open to new ideas. Please mind that
   there's no guarantee a feature you need will be implemented. That's why we offer you the possibility to test our product for several weeks for free.
 - extend the product designer by yourself. This requires coding skills. See [Extending Product Designer](#extending-product-designer) section.
 
@@ -104,7 +107,7 @@ There are great developer documentations existing:
 - Shopware 6: https://docs.shopware.com/en/shopware-platform-dev-en
 - WooCommerce: https://docs.woocommerce.com/document/woocommerce-developer-wiki/
 
-#### Product Designer JavaScript
+#### JavaScript
 
 You can embed your own JavaScript code to the Product Designer frontend.
 In the backend of the product designer, edit a configuration and click on the
@@ -209,7 +212,7 @@ document.body.append(informationTextElement);
 ```
 
 
-#### Product Designer CSS
+#### CSS
 
 You can add your own stylesheet to the product designer to modify the
 appearance of it. 
@@ -236,7 +239,7 @@ Here are some example styles:
 }
 ```
 
-#### PostMessage JavaScript
+#### PostMessage API
 
 By embedding your own [JavaScript](#product-designer-javascript) you are able to
 change the functionality of the product designer itself.
@@ -285,3 +288,15 @@ img element. You could use this to replace the original product image.
     });
 </script>
 ```
+
+### Support
+
+If you think you found a bug in the product designer or something is not working as you expected feel free to contact our support.
+
+Also if you have a new idea for a feature that is not yet implemented in the designer please let us know.
+We cannot guarantee your feature wish will be implemented but we're always open to new ideas!
+
+The official way to contact us is via support system of your shop system.
+- Shopware: https://account.shopware.com/shops/support
+
+Please mind that there's no support by phone. 
