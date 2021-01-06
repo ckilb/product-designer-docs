@@ -85,7 +85,7 @@ of the plugin have very specific requirements.
 
 The plugin will be extended and improved in frequent intervals.
 If there's some functionality that is missing from your point of view you can
-- check our [Trello Board](#https://trello.com/b/iDjnfwo9/kilb-product-designer-feature-wishes) if the feature wish was already requested by some other customer.  
+- check our [Trello Board](https://trello.com/b/iDjnfwo9/kilb-product-designer-feature-wishes) if the feature wish was already requested by some other customer.  
   If not, you can contact our support and *ask* if the functionality is maybe planned within one of the next releases. We're always open to new ideas. Please mind that
   there's no guarantee a feature you need will be implemented. That's why we offer you the possibility to test our product for several weeks for free.
 - extend the product designer by yourself. This requires coding skills. See [Extending Product Designer](#extending-product-designer) section.
@@ -241,7 +241,7 @@ Here are some example styles:
 
 #### PostMessage API
 
-By embedding your own [JavaScript](#product-designer-javascript) you are able to
+By embedding your own [JavaScript](#javascript) you are able to
 change the functionality of the product designer itself.
 
 Additionally you are able to modify the behaviour and functionality of what happens
