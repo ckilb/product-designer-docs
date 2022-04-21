@@ -69,14 +69,16 @@ const store = window.productDesigner.store;
 
 window.productDesigner.watch(store.hasActiveCanvas(), (isActiveCanvasExisting) => {
     if (!isActiveCanvasExisting) {
-      const canvas = store.activeCanvas().value;
-
-      canvas.on('object:added', (event) => {
-        if (configuration.name = 'name to filter for') {
-          // do something
-        }
-      });
+        return;
     }
+
+    const canvas = store.activeCanvas().value;
+
+    canvas.on('object:added', (event) => {
+        if (configuration.name = 'name to filter for') {
+            // do something
+        }
+    });
 });
 ````
 
