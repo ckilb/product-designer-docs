@@ -2,8 +2,14 @@
   h1 {
     font-weight: 500;
   }
+
   h1, h2, h3, h4, a {
     color: #008490;
+  }
+
+  footer {
+    font-size: 70%;
+    opacity: 0.8;
   }
 }
 
@@ -16,3 +22,4 @@
 .site-footer {
   display: none;
 }
+

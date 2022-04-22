@@ -3,7 +3,7 @@ parent: Customizations
 nav_order: 1
 ---
 
-# Post Compilation Customizations
+# Post Compilation
 
 ## Quick Start
 

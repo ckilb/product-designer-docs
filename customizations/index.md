@@ -38,6 +38,8 @@ While it's possible to achieve some great results there are some disadvantages u
 - While it's quite possible to do deep customizations using this approach it can be tricky sometimes. If you need deeper ways of customization or prefer a cleaner way this approach
   may not be the right for you.
 
+>> Read more about post compilation customizations [here](/customizations/post-compilation.html).
+
 ## Source code plugin customizations
 
 This is the recommended way if you want to deeply change the core logic of the designer using a clean approach
