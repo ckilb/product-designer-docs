@@ -25,11 +25,11 @@ Please mind that only fonts will be used if the following requirements are met:
 
 Some examples for valid file names are:
 
-`Audiowide.ttf`
-`OpenSans.ttf` (not: `OpenSans-Regular.ttf`)
-`OpenSans-Bold.ttf`
-`OpenSans-Italic.ttf`
-`OpenSans-BoldItalic.ttf`
+`Audiowide.ttf` \
+`OpenSans.ttf` (not: `OpenSans-Regular.ttf`) \
+`OpenSans-Bold.ttf` \
+`OpenSans-Italic.ttf` \
+`OpenSans-BoldItalic.ttf` \
 
 You can find a lot of usually well-supported fonts on [Google Fonts](https://fonts.google.com).
 Please mind that you have to download the fonts from there and upload them to your media manager again like described above.

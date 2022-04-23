@@ -15,7 +15,7 @@ Please also keep in mind that - if you've implemented a customization and it wor
 for you - there's still tiny risk that it will stop working after you've updated the product designer or your E-Commerce software to
 a new version. So customizations of the designer are - same like running any software - most likely not a one-time charge.
 
-If you are eligible for using our paid support and you have some issues using the designer please make sure
+If you are eligible for using our [official support](/support.html) and you have some issues using the designer please make sure
 to disable all your customizations before contacting us - so you can be sure that the issues are not created by one of your customizations.
 
 ## Post compilation customizations
