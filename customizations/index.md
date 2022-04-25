@@ -18,13 +18,13 @@ a new version. So customizations of the designer are - same like running any sof
 If you are eligible for using our [official support](/support.html) and you have some issues using the designer please make sure
 to disable all your customizations before contacting us - so you can be sure that the issues are not created by one of your customizations.
 
-## Post compilation customizations
+## Monkey Patching 🐒
 
 This is the recommended way if you or your colleagues have basic knowledge in programming and you don't want to spend too much time and money
 in developing customizations and _keeping them up to date_.
-The designer source code will not be touched. Instead you can still use the compiled files which are bundled into the shop plugin.
-Post compilation customizations take place in _additional_ JavaScript and CSS files which will be loaded _after_ the compiled files of
-the designer. Using this way you don't _replace_ logic but _extend_ it afterwards.
+The designer source code will not be touched. Instead you will still use the compiled files which are bundled into the shop plugin.
+Monkey patching takes place in _additional_ JavaScript and CSS files which will be loaded _after_ the compiled files of
+the designer. Using this way you don't _replace_ logic but _patch_ it afterwards to fulfill your requirements.
 Therefore it's _not_ required to download the source code using this approach - still it's recommended to have a look into it to get a better understanding of what's
 happening behind the scene.
 
@@ -38,9 +38,9 @@ While it's possible to achieve some great results there are some disadvantages u
 - While it's quite possible to do deep customizations using this approach it can be tricky sometimes. If you need deeper ways of customization or prefer a cleaner way this approach
   may not be the right for you.
 
->> Read more about post compilation customizations [here](/customizations/post-compilation.html).
+Read more about monkey patching [here](/customizations/monkey-patching.html).
 
-## Source code plugin customizations
+## Source code plugins 🔌
 
 This is the recommended way if you want to deeply change the core logic of the designer using a clean approach
 and without risking too many compatibility issues with future versions of the designer.
@@ -60,9 +60,11 @@ Please mind: The recompilation is just needed to have your plugins bundled and c
 approach you don't modify the original source code files - you basically just use dependency injection to replace some of
 their logic.
 
-## Source code modifications
+Read more about source code plugins [here](/customizations/plugins.html).
 
-Of course it's possible to directly modify the original source code and compile it again - so this is an option, too.
+## Source code modifications 🔨
+
+Of course it's possible to directly modify the original source code files and compile it again - so this is an option, too.
 You could use this approach if you don't care about being compatible to future updates and you don't want to be forced into
 the DI architecture the _source code plugin approach_ requires.
 In general we don't recommend touching the source code directly - but, if you were thinking about writing your own

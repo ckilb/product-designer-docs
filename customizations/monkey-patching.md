@@ -3,16 +3,16 @@ parent: Customizations
 nav_order: 1
 ---
 
-# Post Compilation
+# Monkey Patching
 
 ## Quick Start
 
-You can customize the product designer with post compilation customizations.
+You can customize the product designer using monkey patching.
 With this approach you keep the asset files (JavaScript and CSS) bundled with the designer plugin
 for you online shop untouched but add your own JavaScript and CSS files which will be loaded
 additionally.
 
-The following steps will explain to you how to add post compilation customizations. Please make sure that
+The following steps will explain to you how to add monkey patches. Please make sure that
 you have installed and configured the designer beforehand.
 
 ### CSS customizations
@@ -24,7 +24,7 @@ For most elements you should use their (or their parents) attribute `data-compon
 4. Upload the CSS file to your server choosing a path which is publicly available.
 5. Find out the URL to your CSS file, make sure it's working and copy it.
 6. Open your web shops admin area, open your product designer configuration you want to apply the CSS style to, and paste the
-URL into the field _Custom Stylesheet URL_ under _Advanced_.
+URL into the field _Custom Stylesheet URL_ under the tab _Advanced_.
 
 #### Examples
 
@@ -52,7 +52,7 @@ Remove QR code button:
 4. Upload the JavaScript file to your server choosing a path which is publicly available.
 5. Find out the URL to your JavaScript file, make sure it's working and copy it.
 6. Open your web shops admin area, open your product designer configuration you want to apply the JavaScript functionality to, and paste the
-   URL into the field _Custom JavaScript URL_ under _Advanced_.
+   URL into the field _Custom JavaScript URL_ under the tab _Advanced_.
 
 #### How To
 
