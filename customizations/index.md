@@ -12,8 +12,8 @@ It's crucial to understand all of them to find out the way that works best for y
 Please mind: For all ways of customization developer skills are needed.
 
 Please also keep in mind that - if you've implemented a customization and it works
-for you - there's still tiny risk that it will stop working after you've updated the product designer or your E-Commerce software to
-a new version. So customizations of the designer are - same like running any software - most likely not a one-time charge.
+for you - there's still a tiny risk that it will stop working after you've updated the product designer or your online shop system to
+a new version. So you should test your customizations after each update again.
 
 If you are eligible for using our [official support](/support.html) and you have some issues using the designer please make sure
 to disable all your customizations before contacting us - so you can be sure that the issues are not created by one of your customizations.
@@ -69,3 +69,12 @@ You could use this approach if you don't care about being compatible to future u
 the DI architecture the _source code plugin approach_ requires.
 In general we don't recommend touching the source code directly - but, if you were thinking about writing your own
 product designer from scratch and you just use our product designer as a foundation to save time and money this could be a legit way.
+
+## Post Message API 📮
+
+Usually data between the product designer and your online shop are shared using a GraphQL API.
+There's one exception: The moment the customer finishes the design & the product designer gets closed there's a post message
+ sent from the iframe to the HTML page of the web shop. The post message payload contains some information of the newly created design
+like the price and the basket image preview URL. You could listen for the Post Message API request and handle it on your own.
+
+Read more about the Post Message API [here](/customizations/post-message-api.html).
