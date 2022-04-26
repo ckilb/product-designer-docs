@@ -1,5 +1,5 @@
 ---
-nav_order: 3
+nav_order: 50
 parent: FAQ
 ---
 
@@ -14,7 +14,7 @@ The quality indicator can have the following states:
 
 For calculating the image quality the following variables are used:
 - The size of the original image
-- The scaled siz* of the image placed on the canvas
+- The scaled size of the image placed on the canvas
 - The *rendering factor* in your configuration
 
 ## Calculation 
@@ -39,7 +39,7 @@ Because the original image file is 100 x 100 px and 80 x 80px is lower than the 
 
 So if the rendering logic has to scale the image to a **scaling factor of 1** or less the image quality will be great. 
 
-====
+-----
 
 Now let's assume the customer places that image on the canvas but this time it's scaled to 60 x 60px.
 Now the final image size in the exported file will be 120 x 120 px. 
@@ -47,10 +47,11 @@ As the original image only has 100 x 100 px the rendering logic has to scale the
 Information will be lost. 
 The image quality will be *medium* because the scaling factor is higher than 1 but less then 2.
 
-====
+-----
 
 The image quality will be poor if the required scaling factor is higher than 2.
-That means the customer places an image with original size of 100 x 100px to the canvas and scales it to a size bigger than 200 x 200px.
+That means the customer places an image with original size of 100 x 100px to the canvas and scales it to a size bigger than 100 x 100px - so the image size inside the export file will be 
+bigger than 200 x 200px.
 
 
 ## How to change the behaviour?
