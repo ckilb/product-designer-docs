@@ -46,7 +46,7 @@ Remove QR code button:
 
 ### JavaScript Customizations
 
-1. Open the designer in our online shop for one of your articles
+1. Open the designer in your online shop for one of your articles
 2. _(optional)_ Download the Frontend source code of the product designer to get a good understand of how it works - especially the _store_ (file: _src/business/store/store.ts_).
 3. Create a JavaScript file with your customizations.
 4. Upload the JavaScript file to your server choosing a path which is publicly available.
