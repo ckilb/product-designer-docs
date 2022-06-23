@@ -14,12 +14,18 @@ JPG is a popular pixel-based image format supported by most image viewers. The f
 ## PNG
 PNG is another popular pixel-based image format supported by most image viewers. The file size is bigger compared to JPG and WEBP but it's lossless. Transparency is supported.
 
+
 ## SVG
 SVG is a popular vector format. Please mind that uploaded images and clip arts will be externally referenced. If you remove these image files on your server they cannot be loaded in the SVG anymore.
 Please also mind that some SVG viewers don't support externally references images.
 
 If you think about using SVG or are not sure what export format is the right for you please read this:
 [What export format should I sue?](/faq/what-export-format.html).
+
+## PDF
+PDF is one of the most popular formats used in the printing industry.
+Usually it's used as a vector format like SVGs - but it has additional features like embedded fonts
+which make them much more likely to be displayed the same way on every device - and on your printed product.
 
 ## JSON
 This is useful for developers. You can use the JSON to create a new HTML canvas with Fabric.js - see 
