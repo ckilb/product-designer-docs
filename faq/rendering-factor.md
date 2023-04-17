@@ -40,6 +40,8 @@ with a size of **15 cm x 15 cm**.
 To achieve this you already should have created  a product designer configuration with a specific **canvas width and height** (size of the canvas in the customer's web browser). 
 Let's say both the width and height is **600 px**.
 
+![Rendering example](/img/rendering.jpg)
+
 You now have to decide what quality you want to use for the designs printed on the T-Shirt. A very common quality is **300 DPI**.
 
 So, we have the following values:
