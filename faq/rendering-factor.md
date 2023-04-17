@@ -20,27 +20,27 @@ Let's assume you have set up a product designer configuration with a canvas widt
 Now image a customer uploads one of the his personal photos with a size of **1.000 x 1.000 px** into the designer and places it on the canvas.
 
 If the rendering factor is 1, the size of the rendered export file of that design will be equal to the canvas width and height. So it's **500 x 500 px**.
-Because the image of your customer is bigger it inevitable that some pixels will get lost and the quality of the export image will be decreased.
+Because the image of your customer is bigger it's inevitable that some pixels will get lost and the quality of the export image will be decreased.
 
 If you set the rendering factor to 2, the rendered export file will have a size of
 **500 px * 2 = 1.000 px**.
 Therefore, all the pixel information from your customer's image can be kept and the quality will be better.
 
-## How to find the best rendering factor?
+## How to calculate the best rendering factor?
 
 The rendering factor should be as small as possible, but as high as necessary.
 
-Browsers, HTML, CSS... all the web technology are basically working with pixel values. That's why the product designer is working with that units, too.
+Browsers, HTML, CSS... all the web technology are basically working with pixel values. That's why the product designer is working with that unit, too.
 On the contrary, the printing industry often works with units like inches, centimeters etc. 
 
 For this reason there's a conversion factor called DPI, which means "dots per inch" and is the number of pixels per inch.
+
+![Rendering example](/img/rendering.jpg)
 
 Let's assume you want to sell T-Shirts and give your customers the opportunity to create a design for the front side of a T-Shirt
 with a size of **15 cm x 15 cm**. 
 To achieve this you already should have created  a product designer configuration with a specific **canvas width and height** (size of the canvas in the customer's web browser). 
 Let's say both the width and height is **600 px**.
-
-![Rendering example](/img/rendering.jpg)
 
 You now have to decide what quality you want to use for the designs printed on the T-Shirt. A very common quality is **300 DPI**.
 
