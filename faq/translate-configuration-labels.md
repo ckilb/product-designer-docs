@@ -9,10 +9,10 @@ First specify a _fallback_ configuration label:
 ![Configuration label input](/img/configuration-label-input.png)
 
 Now add a new translation in your webshop administration for each language.
-The translation key has to be:
-kilb-product-designer.frontend.configurationLabel._Your fallback label with spaces replaced by underscores_.
+The translation key has to be:\
+"kilb-product-designer.frontend.configurationLabel._Your fallback label with spaces replaced by underscores_."
 
-So, if your fallback label is _Front Side_, the translation key has to be:
+So, if your fallback label is _Front Side_, the translation key has to be:\
 **kilb-product-designer.frontend.configurationLabel.Front_Side.**
 
 ## Shopware
