@@ -6,7 +6,7 @@ parent: FAQ
 # How do I translate configuration labels?
 
 First specify a _fallback_ configuration label:
-![Configuration label input](/img/configuration-label-input.png)
+![Configuration label input](/img/label-input.png)
 
 Now add a new translation in your webshop administration for each language.
 The translation key has to be:\
@@ -24,4 +24,4 @@ Now click on _New snippet_ and add the translation key as _Name_.
 Make sure you added the translation for every translation set you use.
 Please make also sure that you cleared the caches afterwards.
 
-![Configuration label translation](/img/configuration-label-translation.png)
+![Configuration label translation](/img/label-translation.png)
