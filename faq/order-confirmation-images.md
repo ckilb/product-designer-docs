@@ -37,7 +37,7 @@ nestedItem.cover.url
 
 and - in case you are using the designer _plugin_ replace it with :
 ```twig
-nestedItem.payload.productDesignBasketImageUrl ?? nestedItem.cover.url
+nestedItem.payload.productDesignPreviewImageUrls[0] ?? nestedItem.cover.url
 ```
 
 or - in case you are using the designer _app_ replace it with:
