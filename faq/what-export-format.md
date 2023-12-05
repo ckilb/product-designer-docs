@@ -19,20 +19,16 @@ Usually SVGs created by the designer work perfectly in your browser like Chrome 
 it will work in Inkscape, too. Most likely it will not work in Illustrator because it doesn't support some features
 like inline embedding of images.
 
-That's because every SVG viewer software has it's own implementation of how to parse and interpret SVG files and they don't work exactly the same.
+That's because every SVG viewer software has its own implementation of how to parse and interpret SVG files and they don't work exactly the same.
 Also they often don't support all the functionalities SVG in theory could have.
 
-So if you decide to use SVG please be sure to test your work flow - starting with creating a design using the product designer and finishing with 
-have a look to the customized product you would sell to your customers.
-
-You are now maybe wondering why SVG export is implemented at all. There are basically two reasons for that:
-- Modern browsers and JavaScript make it quite easy to create SVGs - so it was a low hanging fruit
-- They are good for debugging and testing purposes. For the same reason JSON export is available.
+So if you decide to use SVG please be sure to test your work flow - starting with creating a design using the product designer and finishing by 
+having a look at the customized product you would sell to your customers.
 
 Please mind that - if you allow your customers to upload their own image files to use them in their design - these image
 files most likely are not vector-based. So the advantage of SVGs to be scalable without quality loss is partly lost anyway.
 
-When using pixel-based image formats like **WEBP** you can be quite sure that the image will - aside from colors - look equal on every device.
+When using pixel-based image formats like **WEBP** you can be quite sure that the image will - aside from colors - look identical on every device.
 So if this a way to go for you should do so.
 
 If you really need to have a vector-based file format you should give **PDF** a try. PDF is a very popular format in the printing industry because
