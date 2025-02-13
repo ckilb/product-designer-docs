@@ -78,14 +78,14 @@ Wrong:
 ```javascript
 const configuration = window.productDesigner.store.activeConfiguration();
 
-alert(configuration.name)  // fail: configuration is no instance of Configuration but Ref<Configuration> 
+alert(configuration.name)  // fail: configuration is no instance of Configuration but Ref<Configuration>
 ```
 
 Right:
 ```javascript
 const configuration = window.productDesigner.store.activeConfiguration().value;
 
-alert(configuration.name); 
+alert(configuration.name);
 ```
 ____
 
@@ -111,7 +111,7 @@ If you make changes to the content of the canvas don't forget to render it again
 ```javascript
 if (window.productDesigner.store.hasActiveCanvas().value) {
    const canvas = window.productDesigner.store.activeCanvas().value;
-   
+
    canvas.backgroundColor = 'green';
    canvas.renderAll(); // new background color will not be visible before this call
 }
@@ -153,3 +153,83 @@ window.productDesigner.watch(store.hasActiveCanvas(), (isActiveCanvasExisting) =
    }
 });
 ````
+
+Displaying a notice if an element exceeds the drawing area:
+
+```javascript
+const store = window.productDesigner.store;
+
+const exceedingBoundaryDiv = document.createElement('div');
+exceedingBoundaryDiv.style = 'position: absolute; display: none; z-index: 9999; border-radius: 10px; padding: 5px 8px; top: 1%; left: 50%; transform: translate(-50%); background-color: red; color: white; text-align: center;';
+exceedingBoundaryDiv.innerHTML = 'Das Element befindet sich außerhalb des gravierbaren Bereichs.';
+document.body.append(exceedingBoundaryDiv);
+
+window.productDesigner.watch(store.hasActiveCanvas(), (isActiveCanvasExisting) => {
+   if (isActiveCanvasExisting) {
+      const canvas = store.activeCanvas().value;
+      const config = store.activeConfiguration().value;
+
+      const checkBoundaries = (obj) => {
+         let left = obj.left;
+         let top = obj.top;
+
+         let isBoundaryExceeded = false;
+
+         if (obj.originX === 'center') {
+            left = left - obj.getScaledWidth() / 2;
+         }
+
+         if (obj.originY === 'center') {
+            top = top - obj.getScaledHeight() / 2;
+         }
+
+         const right = left + obj.getScaledWidth();
+         const bottom = top + obj.getScaledHeight();
+
+         if (left < (config.canvasPositionLeft - 1)) {
+            isBoundaryExceeded = true;
+         }
+
+         if (top < (config.canvasPositionTop - 1)) {
+            isBoundaryExceeded = true;
+         }
+
+         const maxWidth = config.canvasWidth + config.canvasPositionLeft;
+
+         if (right > (maxWidth + 1)) {
+            isBoundaryExceeded = true;
+         }
+
+         const maxHeight = config.canvasHeight + config.canvasPositionTop;
+
+         if (bottom > (maxHeight + 1)) {
+            isBoundaryExceeded = true;
+         }
+
+         if (isBoundaryExceeded) {
+            exceedingBoundaryDiv.style['display'] = 'block';
+
+            return;
+         }
+
+         exceedingBoundaryDiv.style['display'] = 'none';
+      }
+
+      canvas.on('object:modified', (event) => {
+         checkBoundaries(event.target);
+      });
+
+      canvas.on('selection:created', (event) => {
+         checkBoundaries(event.selected[0]);
+      });
+
+      canvas.on('selection:updated', (event) => {
+         checkBoundaries(event.selected[0]);
+      });
+
+      canvas.on('selection:cleared', (event) => {
+         exceedingBoundaryDiv.style['display'] = 'none';
+      });
+   }
+});
+```
