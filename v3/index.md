@@ -15,6 +15,13 @@ The update will not only contain a good amount of improvements you'll immediatel
 - Specify the primary and secondary color to be used in the designer. Like with all settings you'll be ablte to specify such colors for each configuration and article individually.
 - The default color will be a neutral black one, which will probably fit nicely to your shop's theme. You want that greenish color back? Just set the primary color of your configuration to "teal".
 
+### Target Selector
+You can now specify, how the designer should be embedded into your shop website.\
+By default, the designer will still be opened in a modal.\
+If you prefer a different way, you can specify a JavaScript selector in each configuration. If you do so, the designer will find the element on your website, make it visible (if it not already is) and place the designer on top of it.\
+...\
+You're right, this is quite technical. But we'll add a page in our documentation to help you with this! If you'll have further questions, don't hesitate to reach out.
+
 ### Improved Performance
 - The performance of the designer has been drastically improved. Once your customers click the button to open it, it will be loaded almost immediately.
 - We also replaced the old "Bootstrap" modal with our own. The new one is not only faster, it also gives more space for the design because no header bar is needed anymore.
